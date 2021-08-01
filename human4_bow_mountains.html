@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/human4_bow_mountains.css">
+  <link rel="stylesheet" href="/css/utilities.css">
+  <title>Something doesn't seem right...</title>
+</head>
+<body>
+<div class="screen" id="screen-one">
+  <h2>You wind your way up through the mountain pass, but all the while you feel unnerved like you're being watched. You look at the path ahead...if you continue, there's no turning back. Maybe you'd better peek over your shoulder...</h2>
+  <a class="btn" id="start-btn">Look behind you</a>
+</div>
+
+<div class="screen" id="screen-two">
+  <h2>Oh no! A band of goblins has been trailing you through the mountain pass. Quick! Draw your bow! To the summit!</h2>
+  <ul class="goblin-list">
+    <li>
+      <p>click the goblin</p>
+      <button class="choose-goblin-btn">
+        <img
+        src="/img/goblin1.png"
+        alt="goblin"
+
+      </button>
+    </li>
+  </ul>
+</div>
+
+<div class="screen game-container" id="game-container">
+  <h3 id="time" class="time">Time: 00:00</h3>
+  <h3 id="score" class="score">Score: 0</h3>
+  <h5 id="message" class="message">
+    There are too many of them! But you've given yourself enough time to find your way into a cave.
+    <br>
+    <br>
+    <br>
+    <a class="cave" href="#">Enter the cave</a>
+  </h5>
+<!-- <audio id="arrow-sound" src="/sounds/arrow_swoosh.mp3" controls autoplay></audio> -->
+</div>
+
+<script src="/js/human4_bow_mountains.js"></script>
+</body>
+</html>

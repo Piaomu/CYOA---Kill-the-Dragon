@@ -1,0 +1,57 @@
+:root {
+  /* --primary-color: #eb4031;
+  --secondary-color: #2db814;
+  --tertiary-color: #b85114;
+  --dark-color: #856451;
+  --light-color: #6ded82; */
+
+  --primary-color: #ea0f26;
+  --secondary-color: #1319eb;
+  --tertiary-color: #14dc00;
+  --primary-light: #e14944;
+  --secondary-light: #4446e1;
+  --tertiary-light: #44e153;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+.btn {
+  background-color: var(--secondary-color);
+  font-family: roboto, sans-serif;
+  color: #eee;
+  font-size: 14px;
+  text-decoration: none;
+  padding: 15px 25px;
+  border-radius: 5px;
+  border: 1px solid black;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.7);
+  margin: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn .circle {
+  position: absolute;
+  background-color: white;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  opacity: 0.5;
+  transform: translate(-50%, -50%) scale(0);
+  animation: scale 0.2s ease-out;
+}
+
+@keyframes scale {
+  to {
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+  }
+}
+
+.btn:hover {
+  background-color: var(--secondary-light);
+}

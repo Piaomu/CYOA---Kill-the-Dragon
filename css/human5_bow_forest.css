@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(/img/human5_bow_forest.png);
+  background-size: cover;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.dialogue {
+  color: #eee;
+  text-shadow: -3px -3px black;
+  text-align: center;
+}
+
+.dialogue-text {
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 65px;
+  width: 100%;
+}
+
+.quiz-container {
+  background-color: white;
+  height: 400px;
+  width: 600px;
+  position: fixed;
+  top: 50vh;
+  border: 5px solid black;
+  border-radius: 20px;
+  padding: 10px 20px;
+  box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.5);
+}
+
+button {
+  width: 100%;
+  transform: translateX(-1%);
+}
+
+.survey-end {
+  text-align: center;
+}
